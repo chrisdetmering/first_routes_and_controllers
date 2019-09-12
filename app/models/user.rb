@@ -24,4 +24,7 @@ class User < ApplicationRecord
   has_many :artworks, 
     foreign_key: :artist_id,
     dependent: :destroy
+
+  has_many :comments, 
+    dependent: :destroy
 end 
