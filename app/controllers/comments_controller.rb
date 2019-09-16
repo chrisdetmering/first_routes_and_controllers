@@ -1,6 +1,5 @@
 class CommentsController < ApplicationController 
   def index 
-    
     case 
       when params[:user_id]
         
